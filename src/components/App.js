@@ -63,6 +63,7 @@ class App extends Component {
     this.setState({
       contacts: this.state.contacts.filter((contact) => contact.id !== id),
     });
+    this.setState({ filter: "" });
   };
 
   onChangeFilter = (e) => {
